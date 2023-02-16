@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+header{
+    /* background-color: #FF900E; */
+    background: rgba(255, 144, 14, 0.1);
+   
+    /* height: 120vh; */
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+nav h2{
+    font-size: 2rem;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+    margin-left: 4rem;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+.banner{
+    text-align: center;
+    padding-top: 1rem;
+   
+}
+
+.explore-btn{
+    padding: 14px 28px;
+    border: 0;
+    cursor: pointer;
+    background-color: #FF900E;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0.5rem 0 1.5rem 0;
+}
+.ten-plus-year{
+    
+    padding: 15px 50px;
+    background-color: #FF900E;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 1rem;
+    right: 15rem;
+    border-radius: 5px;
+    text-align: center;
+}
+img{
+    width: 100%;
+    
+}
+.banner .title{
+    font-size: 64px;
+    font-weight: 700px;
+}
+.banner .desc{
+    width: 75%;
+   margin: auto;
+    font-size: 16px;
+    font-weight: 300px;
+    padding: 1rem 0 0.5rem 0;
+}
+
+/* featured section */
+.feature{
+    width: 75%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.featured-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.featured-image img{
+    height: 20rem;
+    width: 20rem;
+}
+.featured-title{
+  
+    color: #727272;
+}
+.feature p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 1.2rem 0;
+    line-height: 1.6rem;
+}
+.featured-title, .about-title{
+    font-size: 45px;
+    font-weight: 500px;
+}
+/* about section */
+.about{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+
+.details{
+    width: 90%;
+}
+.details h3{
+    font-size: 2rem;
+    font-weight: 600;
+    border-left: 4px solid #FF900E;
+    padding-left: 0.5rem;
+}
+.details .desc{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+.details .card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+    margin: 0.8rem 0;
+}
+.card-details{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0.6rem 0 0 0;
+}
+
+/* facts section */
+.facts{
+    width: 75%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+.cards-container .card{
+    text-align: center;
+    border: 2px solid #FF900E;
+    padding: 2rem 1rem;
+}
+.cards-container .card h4{
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.cards-container .card p{
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #757575;
+}
+.cards-container .card img{
+    width: 45.22px;
+    height: 45.22px;
+}
+.facts .title, .sponsors h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.facts .desc, .sponsors p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+
+
+/* sponsors */
+.sponsors{
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem 0 5rem 0;
+}
+.sponsor{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.sponsor-details{
+    text-align: center;
+    
+}
+.sponsor img{
+    filter: grayscale(1);
+}
+.sponsor img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.sponsors-paragraph{
+    margin: auto;
+    width: 40%;
+}
+/* footer */
+
+footer{
+    padding: 2rem;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+footer p{
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    ul{
+        display: none;
+    }
+    .banner .title{
+        font-size: 25px;
+        font-weight: 700px;
+    }
+   .feature, .about, .cards-container, .sponser{
+        flex-direction: column;
+    }
+    .sponsors-paragraph, .banner .desc{
+        width: 100%;
+    }
+    .featured-image, .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ten-plus-year{
+        position: static;
+    }
+    nav h2{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+   
+    .banner .title{
+        font-size: 30px;
+        font-weight: 700px;
+    }
+    .feature, .about, .cards-container, .sponser{
+        flex-direction: column;
+    }
+    .feature, .facts {
+        text-align: center;
+    }
+    .sponsors-paragraph, .banner .desc{
+        width: 100%;
+    }
+   
+    .ten-plus-year{
+    position: static;
+    }
+    nav h2{
+        text-align: center;
+    }
+}
